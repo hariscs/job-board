@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     './app/**/*.{js,ts,jsx,tsx}',
@@ -7,9 +8,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['var(--font-leagueSpartan)'],
-      },
       fontSize: { body: '0.938rem' },
       colors: {
         primary: 'hsl(180, 29%, 50%)',
@@ -19,6 +17,9 @@ module.exports = {
         lightGrayishCyan: 'hsl(180, 31%, 95%)',
         darkGrayishCyan: 'hsl(180, 8%, 52%)',
       },
+    },
+    fontFamily: {
+      sans: ['var(--font-leagueSpartan)'],
     },
   },
   plugins: [],
